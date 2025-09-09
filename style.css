@@ -53,12 +53,13 @@ body {
     position:fixed;
     top: 0;
     width: 100%;
-    background: var(--primary-bg-color);
+    background: #272121FF;
     z-index: 100;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     min-height: 80px;
     display: flex;
     align-items: center;
+    border-bottom: 10px solid var(--base-color);
 }
 #navbar ul {
     display: flex;
@@ -147,10 +148,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    margin-top: 0;
+    margin-top: 3rem;
     margin-bottom: 0;
     padding-top: 10%;
     padding-bottom: 10%;
+    border: 10px solid var(--base-color);
+    border-top: 0;
   }
 
   #name .name-header,
@@ -158,6 +161,7 @@ body {
     text-align: center;
     font-weight: 800;
     font-style: italic;
+    transform: translateY(-1rem);
   }
 
   #name .name-header {
