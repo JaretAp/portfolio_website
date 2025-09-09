@@ -23,8 +23,8 @@
 
 
   </nav>
-
-  <!-- Theme Switch Pill -->
+<!--
+  Theme Switch Pill
   <div id="theme-switch-container">
     <div id="theme-switch-pill" onclick="switchTheme(event)">
       <span id="pill-yellow" class="pill-option">Yellow</span>
@@ -32,10 +32,15 @@
       <div id="pill-indicator"></div>
     </div>
   </div>
-
+-->
     <!-- About Me Section -->
     <section id="about">
-      <h2>About Me</h2>
+      <div class="about-me-row">
+        <div class="about-me-left"></div>
+        <div class="about-me-header"> <h2 class="header">About Me</h2></div>
+        <div class="about-me-right"></div>
+       
+      </div>
   <p>Fueled by strong coffee, I’m a tech enthusiast immersed in cybersecurity, full-stack development, and the continual pursuit of new programming languages. I bring practical experience in system administration and technical support, and I love turning complex problems into clean solutions. On Sundays, I’m proudly in Eagles green—go Philadelphia!</p>
   </section>
 
@@ -46,7 +51,7 @@
     <section id="skills">
       <div class="skills-row">
         <div class="skills-photo-left"></div>
-        <div class="skills-header"><h2>Skills</h2></div>
+        <div class="skills-header"><h2 class="header">Skills</h2></div>
         <div class="skills-photo-right"></div>
       </div>
       <!-- Skills Section Content -->
@@ -65,11 +70,16 @@
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2>Projects</h2>
+      
+      <h2 class="header">Projects</h2>
       <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
+        <li><a href="https://github.com/JaretAp/php_js_html_form_notepad" target="_blank" rel="noopener">Notepad Form using PHP Repository on GitHub</a></li>
+        <li><a href="https://github.com/JaretAp/staculaexpress.com" target="_blank" rel="noopener">Staculaexpress.com Repository on GitHub</a>
+          <li><a href="https://github.com/JaretAp/CountStacula.com" target="_blank" rel="noopener">Countstacula.com Repository on GitHub</a></li>
+        <li><a href="https://github.com/JaretAp/jaretaparo.com" target="_blank" rel="noopener">Jaretaparo.com Repository on GitHub</a></li>
+        <li><a href="https://github.com/JaretAp/message_board" target="_blank" rel="noopener">Message Board Repository on GitHub</a></li>
+        <li><a href="https://github.com/JaretAp/message_board" target="_blank" rel="noopener">Tic Tac Toe Repository on GitHub</a></li>
+        
       </ul>
     </section>
 
@@ -77,7 +87,7 @@
 
     <!-- Websites Section -->
     <section id="websites">
-      <h2>Websites</h2>
+      <h2 class="header">Websites</h2>
       <ul>
   <li><a href="https://www.staculaexpress.com" target="_blank" rel="noopener">www.staculaexpress.com</a> <span>- Business Landing Page</span></li>
   <li><a href="https://www.countstacula.com" target="_blank" rel="noopener">www.countstacula.com</a> <span>- Shadow Self Website</span></li>
@@ -89,7 +99,7 @@
 
     <!-- Contact Me Section -->
     <section id="contact">
-      <h2>Contact Me</h2>
+      <h2 class="header">Contact</h2>
       <a id="linkedin-btn" href="https://www.linkedin.com/in/jaret-aparo/" target="_blank" rel="noopener">
         <button type="button">Connect on LinkedIn</button>
       </a>
@@ -104,6 +114,8 @@
   
   
 </body>
+
+<!--  Javascript if I want to use theme switching icon
 <script>
 function switchTheme(event) {
   const html = document.documentElement;
@@ -126,5 +138,7 @@ window.onload = function() {
   }
 }
 </script>
+-->
+
 </body>
 </html>
