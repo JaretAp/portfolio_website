@@ -767,14 +767,15 @@ body {
   }
 
   #phishing {
-    margin-left: 25vw;
+    margin-left: 20vw;
   }
   #support {
-    margin-right: 24vw;
+    margin-right: 18vw;
+  }
+  #desktop {
+    margin-right: 10vw;
   }
 }
-
-
 
 @media (max-width: 490px) {
   .header {
