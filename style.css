@@ -97,6 +97,10 @@ body {
 /* Header font-size */
 .header {
   font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
 }
 /* =====================
    About Me Section
@@ -195,7 +199,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: italic;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     align-items: center;
 }
 #about p {
