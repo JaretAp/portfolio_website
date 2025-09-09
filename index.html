@@ -1,13 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="yellow">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="colors.css" />
   <title>Portfolio_Website</title>
 </head>
 <body>
+    <!-- Sticky Navbar -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#websites">Websites</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+
+
+  </nav>
+
+  <!-- Theme Switch Pill -->
+  <div id="theme-switch-container">
+    <div id="theme-switch-pill" onclick="switchTheme(event)">
+      <span id="pill-yellow" class="pill-option">Yellow</span>
+      <span id="pill-blue" class="pill-option">Blue</span>
+      <div id="pill-indicator"></div>
+    </div>
+  </div>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+  <p>Fueled by strong coffee, I’m a tech enthusiast immersed in cybersecurity, full-stack development, and the continual pursuit of new programming languages. I bring practical experience in system administration and technical support, and I love turning complex problems into clean solutions. On Sundays, I’m proudly in Eagles green—go Philadelphia!</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Full-Stack Development</li>
+        <li>System Administration</li>
+        <li>Software Engineer</li>
+        <li>Technical Support</li>
+        <li>Cybersecurity</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Project 1</li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+      </ul>
+    </section>
+
+    <!-- Websites Section -->
+    <section id="websites">
+      <h2>Websites</h2>
+      <ul>
+  <li><a href="https://www.staculaexpress.com" target="_blank" rel="noopener">www.staculaexpress.com</a> <span>- Business Landing Page</span></li>
+  <li><a href="https://www.countstacula.com" target="_blank" rel="noopener">www.countstacula.com</a> <span>- Shadow Self Website</span></li>
+  <li><a href="https://www.jaretaparo.com" target="_blank" rel="noopener">www.jaretaparo.com</a> <span>- Personal Website</span></li>
+      </ul>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <a id="linkedin-btn" href="#" target="_blank">
+        <button type="button">Connect on LinkedIn</button>
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+  </body>
+  </html>
   
   
+</body>
+<script>
+function switchTheme(event) {
+  const html = document.documentElement;
+  const indicator = document.getElementById('pill-indicator');
+  if (html.getAttribute('data-theme') === 'yellow') {
+    html.setAttribute('data-theme', 'blue');
+    indicator.style.left = '50%';
+  } else {
+    html.setAttribute('data-theme', 'yellow');
+    indicator.style.left = '0';
+  }
+}
+window.onload = function() {
+  const html = document.documentElement;
+  const indicator = document.getElementById('pill-indicator');
+  if (html.getAttribute('data-theme') === 'blue') {
+    indicator.style.left = '50%';
+  } else {
+    indicator.style.left = '0';
+  }
+}
+</script>
 </body>
 </html>
