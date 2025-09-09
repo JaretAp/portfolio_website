@@ -201,15 +201,73 @@
 }
 #skills ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 2rem 0 0 0;
+    width: 100%;
 }
 #skills li {
+    flex: 1 1 30%;
     font-size: 1.75rem;
     font-weight: 700;
+    text-align: center;
+    margin: 0.5rem 0;
+    min-width: 220px;
+}
+#skills .skills-list-row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+#skills .skill-item {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    min-width: 220px;
+    flex: 1 1 0;
+}
+#skills li:nth-child(-n+3) {
+    order: 1;
+}
+#skills li:nth-child(4) {
+    order: 3;
+}
+#skills li:nth-child(5) {
+    order: 2;
+}
+#skills li:nth-child(n+6) {
+    order: 4;
+}
+#skills ul {
+    row-gap: 1rem;
+}
+#skills .skills-list-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+#skills .skill-cybersecurity, #skills .skill-technical-support {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    min-width: 220px;
+    flex: 1 1 0;
+}
+#skills .skill-cybersecurity {
+    margin-left: 15vw;
+}
+#skills .skill-technical-support {
+    margin-right: 15vw;
 }
 
 /* =====================
