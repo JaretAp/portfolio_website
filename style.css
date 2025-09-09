@@ -91,6 +91,8 @@
     position: relative;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    border: 10px solid var(--base-color);
+    box-sizing: border-box;
 }
 #about::before {
     content: "";
@@ -101,6 +103,7 @@
     height: 100%;
     background: rgba(255,255,255,0.45);
     z-index: 0;
+    border-radius: 0;
 }
 #about > * {
     position: relative;
@@ -129,12 +132,11 @@
 /* =====================
    Separator Section
    ===================== */
-#about-skills-separator {
+.about-skills-separator {
     background: var(--primary-bg-color);
     height: 24px;
-    width: 100vw;
-    margin: 0;
-    margin-top: 0.5rem;
+    width: 100%;
+    margin: 0 !important;
     padding: 0;
 }
 
@@ -146,31 +148,32 @@
     padding-top: 0 !important;
     border-top: none;
     outline: none;
+    border: 10px solid var(--base-color);
 }
 #skills .skills-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     position: relative;
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
     box-sizing: border-box;
-    background: #000;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
 }
 #skills .skills-photo-left,
 #skills .skills-photo-right {
-    width: 464px;
-    min-width: 464px;
+    max-width: 464px;
+    width: 100%;
     height: 150px;
-    display: flex;
-    align-items: stretch;
-    background-size: 200% 100%;
-    background-repeat: no-repeat;
-    border-radius: 0;
-    margin: 0;
-    flex-shrink: 0;
+    border: none;
+    box-sizing: border-box;
+    background-clip: padding-box;
 }
 #skills .skills-photo-left {
     background-image: url('assets/anton-savinov-2Qlj2Gaft7w-unsplash.jpg');
@@ -198,6 +201,8 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: italic;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 #skills ul {
     display: flex;
@@ -219,6 +224,7 @@
     min-width: 220px;
 }
 #skills .skills-list-row-1 {
+    font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -226,12 +232,29 @@
     width: 100%;
     margin-top: 2rem;
 }
-#skills .skill-item {
-    font-size: 1.75rem;
+#skills .skill-item,
+#skills .skill-cybersecurity,
+#skills .skill-technical-support {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
+    font-style: italic;
     text-align: center;
-    min-width: 220px;
-    flex: 1 1 0;
+    color: var(--emphasis-primary-bg-dark);
+    font-size: 2rem;
+    /* Same as #skills h2 except font-size */
+}
+#skills .skills-list-row-1 .skill-item {
+    font-weight: 700;
+}
+#skills .skill-cybersecurity,
+#skills .skill-technical-support {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#skills .skill-cybersecurity, #skills .skill-technical-support {
+  margin-bottom: .5rem;
 }
 #skills li:nth-child(-n+3) {
     order: 1;
@@ -257,7 +280,7 @@
     margin-top: 2rem;
 }
 #skills .skill-cybersecurity, #skills .skill-technical-support {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
     min-width: 220px;
@@ -268,6 +291,12 @@
 }
 #skills .skill-technical-support {
     margin-right: 15vw;
+}
+#skills .skill-item:first-child {
+    padding-left: 1rem;
+}
+#skills .skill-item:nth-child(3) {
+    padding-right: 1rem;
 }
 
 /* =====================
