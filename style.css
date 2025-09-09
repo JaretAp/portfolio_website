@@ -711,8 +711,62 @@ body {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-
 }
+
+#contact .contact-row {
+     background-color: var(--emphasis-primary-bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+#contact .contact-header {
+     background: var(--base-color);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    flex: 1 1 auto;
+    margin: 0 0 0 0;
+}
+
+#contact .contact-left,
+#contact .contact-right {
+    max-width: 464px;
+    width: 100%;
+    height: 150px;
+    border: none;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+}
+
+#contact .contact-left {
+    background-image: url('assets/cytonn-photography-n95VMLxqM2I-unsplash.jpg');
+    background-position: left center;
+    background-size: cover;
+}
+
+#contact .contact-right {
+    background-image: url('assets/cytonn-photography-n95VMLxqM2I-unsplash.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
 #contact h2 {
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -731,6 +785,7 @@ body {
     padding: 0.75rem 2rem;
     cursor: pointer;
     margin: 0;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     text-decoration: none;
     transition: background 0.2s, box-shadow 0.2s;
@@ -942,8 +997,6 @@ body {
   #name .name-statement {
     font-size: .6rem;
   }
- 
-
 
   #projects li {
     font-size: .5rem;
