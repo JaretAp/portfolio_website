@@ -118,15 +118,17 @@
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: italic;
+    margin-bottom: 2rem;
 }
 #about p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: italic;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
 /* =====================
@@ -149,8 +151,13 @@
     border-top: none;
     outline: none;
     border: 10px solid var(--base-color);
+    background-image: url('assets/pawel-czerwinski-ctMsz4XbNGU-unsplash.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 #skills .skills-row {
+  background-color: var(--emphasis-primary-bg-dark);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -174,14 +181,17 @@
     border: none;
     box-sizing: border-box;
     background-clip: padding-box;
+    background-repeat: no-repeat;
 }
 #skills .skills-photo-left {
     background-image: url('assets/anton-savinov-2Qlj2Gaft7w-unsplash.jpg');
     background-position: left center;
+    background-size: cover;
 }
 #skills .skills-photo-right {
     background-image: url('assets/anton-savinov-2Qlj2Gaft7w-unsplash.jpg');
     background-position: right center;
+    background-size: cover;
 }
 #skills .skills-header {
     background: var(--base-color);
@@ -191,8 +201,7 @@
     justify-content: center;
     padding: 0;
     flex: 1 1 auto;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 0 0 0;
 }
 #skills h2 {
     text-align: center;
@@ -203,6 +212,7 @@
     font-style: italic;
     padding-left: 5vw;
     padding-right: 5vw;
+    margin: 0 0 0 0;
 }
 #skills ul {
     display: flex;
@@ -212,7 +222,7 @@
     align-items: center;
     list-style: none;
     padding: 0;
-    margin: 2rem 0 0 0;
+    margin: 0 0 0 0;
     width: 100%;
 }
 #skills li {
@@ -302,6 +312,16 @@
 /* =====================
    Projects Section
    ===================== */
+   
+
+#projects {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border-top: none;
+    outline: none;
+    border: 10px solid var(--base-color);
+}
+   
 #projects h2 {
     text-align: center;
     font-size: 4rem;
@@ -326,6 +346,15 @@
 /* =====================
    Websites Section
    ===================== */
+   
+#websites {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border-top: none;
+    outline: none;
+    border: 10px solid var(--base-color);
+}
+   
 #websites h2 {
     text-align: center;
     font-size: 4rem;
@@ -345,9 +374,10 @@
 #websites li {
     font-size: 1.75rem;
     font-weight: 700;
-}
-#websites li:not(:last-child) {
     margin-bottom: 1.5rem;
+}
+#websites li:last-child{
+    margin-bottom: 3rem;
 }
 #websites li a {
     color: var(--emphasis-primary-text-white);
@@ -363,6 +393,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border-top: none;
+    outline: none;
+    border: 10px solid var(--base-color);
+
 }
 #contact h2 {
     text-align: center;
@@ -383,6 +419,7 @@
     padding: 0.75rem 2rem;
     cursor: pointer;
     margin: 0;
+    margin-bottom: 1.5rem;
     text-decoration: none;
     transition: background 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 8px rgba(10,102,194,0.15);
