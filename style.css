@@ -50,7 +50,7 @@ body {
    Navbar
    ===================== */
 #navbar {
-    position: sticky;
+    position:fixed;
     top: 0;
     width: 100%;
     background: var(--primary-bg-color);
@@ -131,6 +131,44 @@ body {
     font-weight: 800;
     font-style: italic;
 }
+    /*===================
+    Name Section
+    ==================== */
+#name {
+
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    background-image: url('assets/kylie-jimenez-l9g-s3zv1hE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  #name .name-header,
+  #name .name-statement {
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  #name .name-header {
+    font-size: 4rem;
+    padding-top: 2rem;
+  }
+
+  #name .name-statement {
+    font-size: 2.5rem;
+  }
+
 /* =====================
    About Me Section
    ===================== */
@@ -400,16 +438,23 @@ body {
     order: 4;
 }
 #skills ul {
-    row-gap: 1rem;
+    row-gap: 2rem;
 }
 #skills .skills-list-row-2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+#skills .skill-cybersecurity {
+    margin-left: 20vw;
+}
+#skills .skill-technical-support {
+    margin-left: 20vw;
 }
 
 #skills .skills-icons-row-2 {
@@ -442,6 +487,15 @@ body {
 #skills .skill-item:nth-child(3) {
     padding-right: 1rem;
 }
+ 
+#phishing{
+    margin-left: 30vw;
+}
+
+#support {
+  margin-right: 23vw;
+}
+
 
 /* =====================
    Projects Section
@@ -724,16 +778,23 @@ body {
     margin-bottom: 2rem;
   }
   #phishing {
-    margin-left: 28vw;
+    margin-left: 25vw;
   }
   #support {
-    margin-right: 28vw;
+    margin-right: 22vw;
   }
 }
 
 @media (max-width: 930px) {
   .header {
      font-size: 2rem;
+  }
+
+  #name .name-header {
+    font-size: 3rem;
+  }
+  #name .name-statement {
+    font-size: 1.5rem;
   }
   #about p {
     font-size: 1.25rem;
@@ -744,12 +805,22 @@ body {
     font-size: 1.25rem;
   }
   #skills .skill-cybersecurity {
-    margin-left: 8vw;
-    margin-right: 1rem;
-    padding-right: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  #skills .skill-list-row-2 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
   }
   #skills .skill-technical-support {
-    margin-right: 8vw;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
   }
   #projects li {
     font-size: 1.25rem;
@@ -767,10 +838,10 @@ body {
   }
 
   #phishing {
-    margin-left: 20vw;
+    margin-left: 22vw;
   }
   #support {
-    margin-right: 18vw;
+    margin-right: 20vw;
   }
   #desktop {
     margin-right: 10vw;
@@ -781,6 +852,14 @@ body {
   .header {
     font-size: 1.5rem;
   }
+
+  #name .name-header {
+    font-size: 2.5rem;
+  }
+  #name .name-statement {
+    font-size: .90rem;
+  }
+
   #about p {
     font-size: 1rem;
   }
@@ -855,6 +934,13 @@ body {
   #skills .skill-item:first-child {
     margin-left: 0;
     padding-left: 0;
+  }
+
+   #name .name-header {
+    font-size: 2rem;
+  }
+  #name .name-statement {
+    font-size: .6rem;
   }
  
 
