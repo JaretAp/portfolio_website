@@ -17,6 +17,35 @@ body {
     font-style: italic;
 }
 
+/* Icons */
+
+.icon {
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+}
+
+#dev {
+  margin-left: 14vw;
+}
+
+#manage {
+  margin-left: 2vw;
+}
+
+#desktop {
+  margin-right: 13vw;
+}
+
+#phishing {
+  margin-left: 19vw;
+}
+
+#support {
+  margin-right: 34vw;
+}
+
+
 /* =====================
    Navbar
    ===================== */
@@ -220,7 +249,7 @@ body {
    ===================== */
 .about-skills-separator {
     background: var(--primary-bg-color);
-    height: 24px;
+    height: 3rem;
     width: 100%;
     margin: 0 !important;
     padding: 0;
@@ -324,6 +353,8 @@ body {
     align-items: center;
     width: 100%;
     margin-top: 2rem;
+    flex-wrap: nowrap;
+    gap: 1rem;
 }
 #skills .skill-item,
 #skills .skill-cybersecurity,
@@ -335,10 +366,22 @@ body {
     text-align: center;
     color: var(--emphasis-primary-bg-dark);
     font-size: 2rem;
+    line-height: 1.25;
     /* Same as #skills h2 except font-size */
 }
 #skills .skills-list-row-1 .skill-item {
     font-weight: 700;
+}
+
+#skills .skills-icons-row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: .5rem;
+    flex-wrap: nowrap;
+    gap: 1rem;
 }
 
 #skills .skill-cybersecurity, #skills .skill-technical-support {
@@ -366,6 +409,17 @@ body {
     align-items: center;
     width: 100%;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#skills .skills-icons-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
 }
 #skills .skill-cybersecurity, #skills .skill-technical-support {
     font-size: 2rem;
@@ -374,6 +428,8 @@ body {
     min-width: 220px;
     flex: 1 1 0;
 }
+
+#skills .skill-icons
 #skills .skill-cybersecurity {
     margin-left: 15vw;
 }
@@ -636,7 +692,7 @@ body {
    ===================== */
 #footer {
     text-align: center;
-    padding: 2rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
     font-size: 1.25rem;
     color: var(--primary-text-color);
     background: var(--primary-bg-color);
@@ -645,7 +701,7 @@ body {
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 1048px) {
   .header {
     font-size: 2.5rem;
   }
@@ -655,7 +711,7 @@ body {
   #skills .skill-item,
   #skills .skill-cybersecurity,
   #skills .skill-technical-support {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   #skills .skill-cybersecurity {
     margin-left: 12vw;
@@ -665,10 +721,17 @@ body {
   }
   #skills .skills-list-row-2 {
     justify-content: center;
+    margin-bottom: 2rem;
+  }
+  #phishing {
+    margin-left: 28vw;
+  }
+  #support {
+    margin-right: 28vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .header {
      font-size: 2rem;
   }
@@ -678,10 +741,12 @@ body {
   #skills .skill-item,
   #skills .skill-cybersecurity,
   #skills .skill-technical-support {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
   #skills .skill-cybersecurity {
     margin-left: 8vw;
+    margin-right: 1rem;
+    padding-right: 1rem;
   }
   #skills .skill-technical-support {
     margin-right: 8vw;
@@ -700,21 +765,35 @@ body {
   #navbar a {
     font-size: 1rem;
   }
+
+  #phishing {
+    margin-left: 25vw;
+  }
+  #support {
+    margin-right: 24vw;
+  }
 }
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .header {
     font-size: 1.5rem;
   }
   #about p {
     font-size: 1rem;
   }
+
+  #skills .skills-list-row-1,
+    #skills .skills-list-row-2 {
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
   #skills .skill-item,
   #skills .skill-cybersecurity,
   #skills .skill-technical-support {
-    font-size: .7rem;
+    font-size: .9rem;
   }
   #skills .skill-cybersecurity,
   #skills .skill-item .skill-cybersecurity {
@@ -729,16 +808,22 @@ body {
     min-width: 120px;
     text-align: left;
     margin-left: -.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: .5rem;
   }
   #skills .skill-cybersecurity {
     text-align: left;
     margin-left: 1rem;
+    margin-bottom: 1.5rem;
   }
   #skills .skills-list-row-2 {
     justify-items: flex-start;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
   }
-  #navbar a {
-    font-size: .8rem;
+
+    #skills .skill-item {
+    margin-bottom: 1.5rem;
   }
 
   #projects li {
@@ -757,11 +842,7 @@ body {
 }
 
 @media (max-width: 310px) {
-    #skills .skills-list-row-1,
-    #skills .skills-list-row-2 {
-      flex-direction: column;
-      justify-content: space-between;
-    }
+    
 
     #skills .skill-item,
   #skills .skill-cybersecurity,
@@ -774,20 +855,8 @@ body {
     margin-left: 0;
     padding-left: 0;
   }
-  #skills .skills-list-row-2 {
-    margin-top: 0;
-  }
-  #skills .skill-cybersecurity {
-    margin-bottom: 0;
-  }
  
-  #skills .skill-item {
-    margin-bottom: 1.5rem;
-  }
-  
-  #skills .skill-technical-support {
-    margin-bottom: 2rem;
-  }
+
 
   #projects li {
     font-size: .5rem;
@@ -806,6 +875,21 @@ body {
 
   #navbar a {
     font-size: .5rem;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+  }
+  #dev {
+    margin-left: 5vw;
+  }
+  #manage {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #desktop {
+    margin-right: 5vw;
   }
 
 }
